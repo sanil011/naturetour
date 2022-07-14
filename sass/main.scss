@@ -1,0 +1,57 @@
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
+
+@import "base/base";
+@import "base/animation";
+@import "base/typography";
+@import "base/utilities";
+
+@import "components/button";
+@import "components/composition";
+@import "components/feature-box";
+@import "components/card";
+@import "components/stories";
+@import "components/bgvideo";
+@import "components/form";
+@import "components/pop";
+
+@import "pages/home";
+
+@import "layout/grid";
+@import "layout/footer";
+@import "layout/navigation";
+
+
+.header
+{
+    height: 95vh;
+    background-image: linear-gradient(to right bottom,rgba($color-primary-light, 0.8),rgba($color-primary-dark, 0.8))
+    ,url(../img/hero-small.jpg);
+    background-size: cover;
+    background-position: top;
+    clip-path: polygon(0 0,100% 0,100% 75vh ,0 100%);
+    &__logo
+{
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+}
+    &__logo-icon
+{
+  height: 3.5rem;
+}
+}
+
+
+.text-box
+{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+
+
